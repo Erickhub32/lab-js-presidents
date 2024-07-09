@@ -447,7 +447,7 @@ function countYearsInOffice(presidents) {
   const presidentsYearsInTheOffice = presidents.reduce((acc, eachYear) => {
     return acc + (eachYear.leftOffice - eachYear.tookOffice);
   }, 0)
-  if (presidents === "null") {
+  if (presidents.leftOffice == "null") {
     return false
   } else {
     return presidentsYearsInTheOffice
